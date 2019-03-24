@@ -30,14 +30,14 @@ include 'Classes/Models/Item/Magazine.php';
 
 $myBook = new Book();
         $myBook->loanItem();
-        $myBook->getItemId(); // Is this the trait?
+        $myBook->getItemId(); 
 
         $lydiaExistingCustomer = new Customer("Lydia", "Babygund123"); // existing customer
         print_r($lydiaExistingCustomer);
 
         $lydiaExistingCustomer->loanItem(1);
 
-        $andrewNewCustomer = Customer::register("Willie", "ASecurePassword", "Andrew", "Reed", "andrew_reed@hotmail.com"); // new customer
+        $andrewNewCustomer = Customer::register("Willie", "ASecurePassword", "Andrew", "Reed", "Flat 4", "Marylebone", "London", "W1U 5LE", "andrew_reed@hotmail.com", "07774318425"); // new customer
         print_r($andrewNewCustomer); 
         
         ?>

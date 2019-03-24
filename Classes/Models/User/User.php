@@ -5,7 +5,6 @@ namespace Classes\Models\User;
 abstract class User {
 
     //visibility of attributes
-
     protected $user_id;
     protected $user_name;
     protected $password;
@@ -13,8 +12,8 @@ abstract class User {
     protected $last_name;
     protected $contact_id;
 
-    public function __construct($user_name, $password) {
-        $this->user_id = 123;
+    public function __construct($user_name, $password) { //login
+       $this->user_id = 123;
     }
 
     public function search($searchTerm) {
