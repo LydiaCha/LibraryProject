@@ -69,12 +69,7 @@ button {
 /* homeSearch.php */
 
 .topnav {
-    text-align: right;
     background-color: #183149;
-    padding-top: 17px;
-    padding-right: 27px;
-    padding-bottom: 35px;
-    padding-left: 27px;
     text-decoration: none;
     font-family: Cabin;
     font-style: Regular;
@@ -95,6 +90,22 @@ button {
     background-color: #183149;
     color: white;
     text-decoration: none;
+}
+
+.navLinks {
+    text-align: right;
+    padding-top: 17px;
+    padding-right: 27px;
+    padding-bottom: 35px;
+    padding-left: 27px;
+}
+
+.bookIcon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    padding-top: 11px;
+    padding-left: 27px;
 }
 
 .imageContainer {
@@ -124,4 +135,3 @@ button {
 .searchContainer {
     padding-top: 20px;
 }
-
