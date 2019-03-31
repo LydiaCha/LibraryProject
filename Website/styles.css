@@ -1,0 +1,127 @@
+/* signUpForm.php */
+
+body {
+    margin: 0;
+    background-color: #F0F4F8;
+    font-family: Cabin;
+}
+
+h1 {
+    font-family: Cabin;
+    font-style: Bold;
+    font-size: 50px;
+    color: white;
+
+}
+
+h2 {
+    font-family: Cabin;
+    font-style: Bold;
+    font-size: 30px;
+    color: #183149;
+}
+
+h4 {
+    font-family: Cabin;
+    font-style: Regular;
+    font-weight: normal;
+    font-size: 15px;
+    color: #183149;
+}
+
+.searchBar {
+    border-radius: 57px;
+    border-style: none;
+    background: rgba(255,255,255,0.5);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.8);
+    padding-top: 8px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: Cabin;
+    color: #183149;
+    text-align: left;
+    width: 400px; 
+}
+
+button {
+    font-family: Cabin;
+    font-style: Bold;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    background-color: #183149; /* button colour */
+    color: white; /* text colour */
+    text-align: center;
+    padding-top: 12px;
+    padding-right: 27px;
+    padding-bottom: 12px;
+    padding-left: 27px;
+    display: inline-block;
+}
+
+.searchButton {
+    margin-left: 10px;
+}
+
+/* homeSearch.php */
+
+.topnav {
+    text-align: right;
+    background-color: #183149;
+    padding-top: 17px;
+    padding-right: 27px;
+    padding-bottom: 35px;
+    padding-left: 27px;
+    text-decoration: none;
+    font-family: Cabin;
+    font-style: Regular;
+    font-weight: normal;
+    font-size: 15px;
+    color: #183149;
+}
+
+.topnav a {
+    float: right;
+    color: white;
+    text-align: right;
+    padding-right: 15px;
+    text-decoration: none;
+}
+
+.topnav a.active {
+    background-color: #183149;
+    color: white;
+    text-decoration: none;
+}
+
+.imageContainer {
+    position: relative;
+    text-align: center;
+}
+
+.discoverText {
+    color: white;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-15%, 0%);
+
+}
+
+.headerSpan {
+    font-family: Cabin;
+    font-size: 65px;
+}
+
+
+.backgroundImage {
+    width: 100%;
+}
+
+.searchContainer {
+    padding-top: 20px;
+}
+
