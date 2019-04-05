@@ -16,9 +16,10 @@ class SearchBar {
         
     }
     
+    
     public function search($searchTerm) {
         if (empty($searchTerm)) {
-            throw new Exception("Its empty!");
+            throw new Exception("It's empty!");
         }
     }
 }

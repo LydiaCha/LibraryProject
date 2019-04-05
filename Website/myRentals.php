@@ -23,19 +23,16 @@
         * {
             box-sizing: border-box;
         }
-
         body {
             background-color: #F0F4F8;
             padding: 20px;
             font-family: Cabin;
         }
-
         /* Center website */
         .main {
             max-width: 1000px;
             margin: auto;
         }
-
         h1 {
             font-size: 50px;
             font-style: Bold;
@@ -49,42 +46,35 @@
             color: #183149;    
             font-family: Cabin;
         }
-
         .row {
             margin: 10px -16px;
         }
-
         /* Add padding BETWEEN each column */
         .row,
         .row > .column {
             padding: 8px;
         }
-
         /* Create three equal columns that floats next to each other */
         .column {
             float: left;
             width: 33.33%;
             display: none; /* Hide all elements by default */
         }
-
         /* Clear floats after rows */ 
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
-
         /* Content */
         .content {
             background-color: white;
             padding: 10px;
         }
-
         /* The "show" class is added to the filtered elements */
         .show {
             display: block;
         }
-
         /* Style the buttons */
         .btn {
             font-family: Cabin;
@@ -102,11 +92,9 @@
             cursor: pointer;
             
         }
-
         .btn:hover {
             background-color: #183149;
         }
-
         .btn.active {
             background-color: #183149;
             color: white;
@@ -243,8 +231,6 @@
                 }
                 element.className = arr1.join(" ");             // to join elements of an array see https://www.w3schools.com/jsref/jsref_join.asp
             }
-
-
         // Add active class to the current button (highlight it)
             var btnContainer = document.getElementById("BtnContainer");
             var btns = btnContainer.getElementsByClassName("btn");
