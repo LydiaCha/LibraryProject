@@ -10,11 +10,6 @@
 
         <?php
         include 'Navigation/NavigationBar.php';
-
-        use Website\Navigation\NavigationBar;
-
-$navBar = new NavigationBar();
-        $navBar->drawNavBar();
         ?>
 
         <div class="imageContainer">
@@ -35,11 +30,9 @@ $searchBar = new SearchBar();
 
             </div>
         </div>
-    </body>
-</html>
-
-<?php
+        <?php
 include 'Footer/footer.php';
-
-use Website\Footer\footer;
 ?>
+    </body>
+    
+</html>

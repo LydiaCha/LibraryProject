@@ -9,12 +9,8 @@
     </head>
     <body>
              <?php
-                 include 'Navigation/NavigationBar.php';
-                 use Website\Navigation\NavigationBar;
-
-                 $navBar = new NavigationBar();
-                 $navBar->drawNavBar();
-             ?>
+        include 'Navigation/NavigationBar.php';
+        ?>
 
         <div class="searchResultsContainer">
              <?php

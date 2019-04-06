@@ -103,7 +103,9 @@
 
 
     <body>
-
+<?php
+        include 'Navigation/NavigationBar.php';
+        ?>
         <!-- MAIN (Center website) -->
         <div class="main">
 
@@ -242,6 +244,10 @@
                 });
             }
         </script>
+<?php
+include 'Footer/footer.php';
 
+?>
     </body>
 </html>
+

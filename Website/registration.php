@@ -25,9 +25,10 @@
         <script src="checkForm.js" type="text/javascript"></script>  <!-- Added java script file to get call to the function checkPassword-->
     </head>
     <body> 
-        <?php 
-        include_once 'Navbar1.php';
+        <?php
+        include 'Navigation/NavigationBar.php';
         ?>
+        
         <div class="row">
             <div class="col-sm-4">  
             </div>
@@ -97,9 +98,10 @@
         </div> <!-- row-->
         <br>
         <!-- Footer -->
-        <?php
-        include_once 'footer.php';
-        ?>
+      <?php
+include 'Footer/footer.php';
 
+
+?>
     </body>
 </html>

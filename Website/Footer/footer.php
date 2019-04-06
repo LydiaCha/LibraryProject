@@ -1,64 +1,25 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
-
-    </head>
-    <body>
-        
-       
-<!-- Footer -->
-<link href="librarystyling.css" rel="stylesheet" type="text/css"> 
-<footer id="footer" class="site-footer" >
-		<div class="container">
-			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5 style="color:white">Library</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href=""class="link-style"></i>Home</a></li>
-                                                <li><a href=""class="link-style"></i>Our Mission</a></li>
-						<li><a href=""class="link-style"></i>This Week's Reviews </a></li>
-						
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-                                    <h5 style="color:white ">Connect</h5>
-					<ul class="list-unstyled quick-links">
-                                            <li><a href="" class="link-style"></i>Become a Member</a></li>
-						<li><a href=""class="link-style"></i>Sign up for Newsletter</a></li>
-						<li><a href=""class="link-style"></i>Contact us</a></li>
-						
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5 style="color:white" >Social Media</h5>
-					<ul class="list-unstyled quick-links">
-						<li><a href="" class="link-style"><i class="fab fa-facebook-square"></i>  Facebook</a></li>
-						<li><a href=""class="link-style"><i class="fab fa-twitter-square"></i>  Twitter</a></li>
-						<li><a href=""class="link-style"><i class="fab fa-instagram"></i>  Instagram</a></li>
-						
-					</ul>
-				</div>
-			</div>
-				
-			<div class="row">
-				<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-					
-					<p class="h6">Copyright Women in Tech 2019. All rights reserved </p>
-				</div>
-				</hr>
-			</div>	
-		</div>
-	
-	<!-- ./Footer -->
-  </footer>
- 
-        
-    </body>
-</html>
+<footer class='footerContainer' style='magin-top: 0;'>
+    <ul>
+        <div style='color: white; font-size:18px;'><li>Library</li></div>
+        <div style='color: #8A8A8A'> <a href='home.php' <li>Homepage</li> </a>
+  <li>Our Mission</li>
+  <li>This Week's Reviews</li> </div>
+</ul>
+    
+  <ul>
+      <div style='color: white; font-size:18px;'><li>Connect</li></div>
+      <div style='color: #8A8A8A'> <a href="registration.php"<li>Become a Member</li> </a>
+  <li>Sign up for Newsletter</li>
+  <a href="mailto:lydia.chatziioannou@gmail.com"><li>Contact us</li></a> </div>
+</ul>
+    
+    <ul>
+        <div style='color: white; font-size:18px;'><li>Social Media</li></div>
+        <div style='color: #8A8A8A'><li>Facebook</li>
+  <li>Twitter</li>
+  <li>Instagram</li></div>
+</ul>
+    <p style='color: white; font-size:10px; padding-bottom: 15px; margin-bottom: 0;'>Copyright(C) Women in Tech 2019. All Rights Reserved</p>
+</footer>
