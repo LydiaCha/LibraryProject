@@ -23,8 +23,7 @@ class SearchBar {
             throw new Exception("It's empty!");
         }
 
-        try {
-            $bookTitle = " ";
+        try {           
             $dsn = "mysql:host=localhost;dbname=Library";
             $user = "root";
             $password = "";
@@ -32,7 +31,7 @@ class SearchBar {
             $pdo = new PDO($dsn, $user, $password);
             $stmt = $pdo->query("SELECT * FROM book WHERE title LIKE '%$searchTerm%'");
             while ($row = $stmt->fetch()) {
-                echo $row['title']."<br/>";
+                echo "<a href='item.php?book_id=".$row['book_id']."'>".$row['title']."</a><br/>";
             }
         } catch (Exception $e) {
             die($e->getMessage());

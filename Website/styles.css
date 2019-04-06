@@ -158,3 +158,12 @@ a {
     text-decoration:none;
     color: #8A8A8A;
 }
+
+.itemPageImages {
+    width: 300px;
+    margin-left: 900px;
+}
+
+.downloadNowButton {
+    margin-left: 900px;
+}
