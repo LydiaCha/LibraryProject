@@ -4,6 +4,7 @@ body {
     margin: 0;
     background-color: #F0F4F8;
     font-family: Cabin;
+    
 }
 
 h1 {
@@ -143,6 +144,9 @@ button {
 .footerContainer {
     background-color: #183149;
     text-align: center;
+    position: absolute;
+    margin-bottom: 0;
+    width: 100%;
 }
 
 ul {   
@@ -151,7 +155,7 @@ ul {
     text-align: left;
     padding-left: 100px;
     padding-right: 100px;
-   
+
 }
 
 a {
@@ -166,5 +170,9 @@ a {
 
 .downloadNowButton {
     margin-left: 900px;
+}
+
+.results {
+    color: #183149;
 }
 

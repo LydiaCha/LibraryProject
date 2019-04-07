@@ -2,11 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Library User Page</title>
+        <title>My Rentals</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">-->
         <link href="styles.css" rel="stylesheet" type="text/css"/>
-        <link href="myRentals.css" rel="stylesheet" type="text/css"/>
 
         <!-- jQuery library -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -28,40 +27,89 @@
         <!-- MAIN (Center website) -->
         <div class="main">
 
-            <h1 style="font-family: Cabin; font-style: Bold; font-size: 50px; color: #183149 ">My rentals</h1>
-            <hr>
+            <h2 style="font-family: Cabin; font-style: Bold; color: #183149; text-align: center ">My rentals</h1>
+                <hr>
 
-            <div id="BtnContainer">
-                <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
-                <button class="btn" onclick="filterSelection('Books')"> BOOKS</button>
-                <button class="btn" onclick="filterSelection('Magazines')"> MAGAZINES</button>
-                <button class="btn" onclick="filterSelection('Films')"> FILMS</button>
-                <button class="btn" onclick="returnToSearch()"> RETURN</button>
-            </div>
+                <div id="BtnContainer" style="margin-left: 50px;">       
+                    <button class="btn" onclick="filterSelection('Books')"> BOOKS</button>
+                    <button class="btn" onclick="filterSelection('Magazines')"> MAGAZINES</button>
+                    <button class="btn" onclick="filterSelection('Films')"> FILMS</button>
+                    <button class="btn active" onclick="filterSelection('all')"> SHOW ALL</button>
 
-            <?php
-            try {           
-            $dsn = "mysql:host=localhost;dbname=lms";
-            $user = "root";
-            $password = "";
+                </div>
 
-            $pdo = new PDO($dsn, $user, $password);
-                   $stmt = $pdo->query("SELECT * FROM reservation WHERE user_id= 1");
-            while ($row = $stmt->fetch()) {
-                //echo "$row['item_id']."'>".$row['']."</a><br/>";
-                        }
-                        ?>
-            
-             <script>
-                        function returnToSearch() {
-                            location.replace("search.php")
+                <div style="margin-bottom: 50px">
+                    <?php
+                    try {
+                        $dsn = "mysql:host=localhost;dbname=lms";
+                        $user = "root";
+                        $password = "";
 
-                        }
-                    </script>
-               
-      
+                        $pdo = new PDO($dsn, $user, $password);
+                        $stmt = $pdo->query("SELECT * FROM reservation WHERE user_id = '1'");
+                        while ($row = $stmt->fetch()) {
+                            $itemId = $row['item_id'];
+                            echo $itemId . "<br/>";
 
-            <!-- END MAIN -->
+                            $itemStmt = $pdo->query("SELECT * FROM book WHERE item_id = " . $row['item_id']);
+                            $book = $itemStmt->fetch();
+                            if (isset($book)) {
+                                ?>
+                    <h2>
+                                <p style="margin-left: 100px"><?= $book['title'] ?></p>
+                                <img style="width: 200px; margin-left: 100px" src='images/<?= $book['image'] ?>'/>
+                                <?php
+                            }
+
+                            $itemStmt = $pdo->query("SELECT * FROM film WHERE item_id = " . $row['item_id']);
+                            $film = $itemStmt->fetch();
+                            if (isset($film)) {
+                                ?>
+                                <p style="margin-left: 100px; margin-left: 100px"><?= $film['film_title'] ?></p>
+
+                                <img style="width: 200px" src='images/<?= $film['image'] ?>'/>
+                                <?php
+                            }
+
+                            $itemStmt = $pdo->query("SELECT * FROM magazine WHERE item_id = " . $row['item_id']);
+                            $magazine = $itemStmt->fetch();
+                            if (isset($magazine)) {
+                                ?>
+                                <p style="margin-left: 100px; margin-left: 100px"><?= $magazine['issue_name'] ?></p>
+
+                                <img style="width: 200px;" src='images/<?= $magazine['image'] ?>'/> </h2>
+                                <?php
+                                
+                            } 
+                            ?>
+
+                            <button style="margin-left: 100px;" class="btn" onclick="returnItem(<?= $itemId ?>)"> RETURN</button>
+
+        <?php
+    }
+} catch (Exception $e) {
+    
+}
+?>
+                </div>
+
+                <script>
+
+                    function returnItem(itemId) {
+                        $.ajax("reservation/returnItem.php?item_id=" + itemId)
+                                .done(function () {
+                                    alert("success");
+                                })
+
+                    }
+                    function returnToSearch() {
+                        location.replace("search.php");
+
+                    }
+                </script>
+
+
+                <!-- END MAIN -->
         </div>
 
         <script>
@@ -117,9 +165,9 @@
             }
         </script>
 
-        
-        <?php
-        include 'Footer/footer.php';
-        ?>
+
+<?php
+include 'Footer/footer.php';
+?>
     </body>
 </html>

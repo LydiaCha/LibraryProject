@@ -11,11 +11,11 @@
         include 'Navigation/NavigationBar.php';
         ?>
         
-        <div style= "text-align: center">
+        <div style= "text-align: center; margin-bottom: 50px">
         <h2> About Us </h2>
         <p> The (name of library) library contains books on subjects such as signal processing, data science, mathematics, economics and history. It also includes magazines and films.</p>
     </div>
-        <div style= "text-align: center"> 
+        <div style= "text-align: center; margin-bottom: 37px"> 
             <img src="images/homepageLaptop.png" alt="" style="width: 35%"/>
                 <img src="images/screenItem.png" alt="" style="width: 35%"/>
                 

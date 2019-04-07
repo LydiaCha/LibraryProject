@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Search Results</title>
         <link href="styles.css" rel="stylesheet" type="text/css"/>
         <link href="search.css" rel="stylesheet" type="text/css"/>
     </head>
@@ -20,7 +20,7 @@
                  $searchBar = new SearchBar();
                  $searchBar->drawSearchBar();           
              ?>
-            
+            <div style="margin: 50px; margin-bottom: 150px">
             <?php
                 if (isset($_GET['searchTerm'])) {
                     try {
@@ -30,6 +30,7 @@
                     }
                 }
             ?>
+                </div>
         </div>
         
            <?php

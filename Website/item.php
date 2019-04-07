@@ -7,7 +7,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Items</title>
         <link href="styles.css" rel="stylesheet" type="text/css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>  
@@ -37,14 +37,14 @@ and open the template in the editor.
                 $authorRow = $stmt->fetch();
                 ?>
         
-       
-                <p style="margin-left: 500px"><?= $bookRow['title'] ?></p>
-                <p style="margin-left: 500px"><?= $bookAuthorRow['author_id'] ?></p>
-                <p style="margin-left: 500px"><?= $authorRow['first_name'] . " " . $authorRow['last_name'] ?></p>
+        <h2>
+                <p style="margin-left: 400px; margin-top: 50px; "><?= $bookRow['title'] ?></p> </h2>
+                <p style="margin-left: 400px"><?= $bookAuthorRow['author_id'] ?></p>
+                <p style="margin-left: 400px"><?= $authorRow['first_name'] . " " . $authorRow['last_name'] ?></p>
        
                
 
-                <img src='images/<?= $bookRow['image'] ?>' class='itemPageImages'/>
+                <img style="margin-top: -130px" src='images/<?= $bookRow['image'] ?>' class='itemPageImages'/>
                 <?php
             }
 
@@ -76,7 +76,7 @@ and open the template in the editor.
         }
         ?>
 
-        <br> <button id='reserve' type="button" style='margin-left: 960px'>DOWNLOAD NOW</button>
+        <br> <button id='reserve' type="button" style='margin-top: 20px; margin-left: 960px; margin-bottom: 40px'>DOWNLOAD NOW</button>
 
 
         <script type='text/javascript'>
