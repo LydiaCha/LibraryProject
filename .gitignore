@@ -1,8 +1,6 @@
 # ignore IDE/hidden/OS cache files
 .*
 *~
-nbproject
-nb-configuration.xml
 Session.vim
 *.tmproj
 *.tmproject

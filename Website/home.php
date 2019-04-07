@@ -27,7 +27,6 @@ $searchBar = new SearchBar();
                 ?>
 
 
-
             </div>
         </div>
         <?php

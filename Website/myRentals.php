@@ -39,89 +39,27 @@
                 <button class="btn" onclick="returnToSearch()"> RETURN</button>
             </div>
 
-            <!-- Borrowed Items Grid -->
-            <div class="row">
-                <div class="column Books">
-                    <div class="content">
-                        <img src="images/harry potter.jpg" alt="books" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">Harry Potter</h3> 
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>                 <!--Here at the moment I put in a link to an empty index.php but we could link this back to the rental/renewal page  if we'll have one-->
-                    </div>                                                                                                  <!-- Also  in these P tag we could link the date to the database to make it dynamic but at the moment i have no idea how to...--> 
-                </div>
+            <?php
+            try {           
+            $dsn = "mysql:host=localhost;dbname=lms";
+            $user = "root";
+            $password = "";
 
-                <div class="column Films">
-                    <div class="content">
-                        <img src="images/the revenant.jpg" alt="films" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">The Revenant</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>
-                
-                <div class="column Magazines">
-                    <div class="content">
-                        <img src="images/the economist.jpg" alt="magazines" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">The Economist</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>
-                
-                <div class="column Return">
-                    <script>
+            $pdo = new PDO($dsn, $user, $password);
+                   $stmt = $pdo->query("SELECT * FROM reservation WHERE user_id= 1");
+            while ($row = $stmt->fetch()) {
+                //echo "$row['item_id']."'>".$row['']."</a><br/>";
+                        }
+                        ?>
+            
+             <script>
                         function returnToSearch() {
                             location.replace("search.php")
 
                         }
                     </script>
-                    <!-- <a href="https://www.google.com/" target="_blank"></a>-->
-                </div>
-                <!--
-                <div class="column Books">
-                    <div class="content">
-                        <img src="images/war and peace.jpg" alt="books" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">War and Peace</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>
-                <div class="column Books">
-                    <div class="content">
-                        <img src="images/middlemarch.jpg" alt="books" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">Middlemarch</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>
-                <div class="column Magazines">
-                    <div class="content">
-                        <img src="images/history.jpg" alt="magazines" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">History</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>
-
-                <div class="column Magazines">
-                    <div class="content">
-                        <img src="images/natgeo.jpg" alt="magazines" style="width:270px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">National Geographic</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>
-                <div class="column Films">
-                    <div class="content">
-                        <img src="images/godfather.jpg" alt="films" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:5;">The godfather</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>
-                <div class="column Films">
-                    <div class="content">
-                        <img src="images/wizard of oz.jpg" alt="films" style="width:300px; height:auto">
-                        <h3 style="font-style:Bold; color:#183149; font-family: Cabin; font-size:"5;>The wizard of OZ</h3>
-                        <p>Please return this item by 13/04/2019 or renew <a href="index.php"> here</a></p>
-                    </div>
-                </div>-->
-                
-
-                <!-- END GRID -->
-            </div>
+               
+      
 
             <!-- END MAIN -->
         </div>
@@ -179,6 +117,7 @@
             }
         </script>
 
+        
         <?php
         include 'Footer/footer.php';
         ?>

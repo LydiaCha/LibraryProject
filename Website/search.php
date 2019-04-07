@@ -31,7 +31,10 @@
                 }
             ?>
         </div>
-           
+        
+           <?php
+include 'Footer/footer.php';
+?>
 
     </body>
 </html>
