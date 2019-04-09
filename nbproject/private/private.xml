@@ -4,24 +4,31 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/search.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/Reservation/returnItem.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/home.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/myRentals.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/logout.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/item.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Classes/Models/Item/ItemInterface.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/aboutUs.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Classes/Models/Item/Book.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/index.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/ConfirmReg.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/Search/SearchBar.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/DBConnect.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/welcome.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/styles.css</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/registration.php</file>
-            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Classes/Models/Item/Film.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/Navigation/NavigationBar.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/search.css</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/Footer/footer.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/Registration/passwordAuthentication.js</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/Reservation/reservation.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Classes/Models/User/Admin.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/myRentals.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Classes/Models/Item/Book.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/index.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Classes/Models/Item/Film.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/Login/validateLogin.php</file>
             <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/error.php</file>
+            <file>file:/Applications/XAMPP/xamppfiles/htdocs/Library/Website/login.php</file>
         </group>
     </open-files>
 </project-private>

@@ -8,7 +8,7 @@
 
             $pdo = new PDO($dsn, $user, $password);
             
-            $user_id = 1;   //TODO: replace with session user id
+            $user_id = 1;   //TODO: replace with session user id $_SESSION['user_id']
             $item_id = $_GET['item_id'];
            
             //create reservation.

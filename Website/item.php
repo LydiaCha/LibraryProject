@@ -41,7 +41,7 @@ and open the template in the editor.
                 <p style="margin-left: 400px; margin-top: 50px; "><?= $bookRow['title'] ?></p> </h2>
                 <p style="margin-left: 400px"><?= $bookAuthorRow['author_id'] ?></p>
                 <p style="margin-left: 400px"><?= $authorRow['first_name'] . " " . $authorRow['last_name'] ?></p>
-       
+                                                                                
                
 
                 <img style="margin-top: -130px" src='images/<?= $bookRow['image'] ?>' class='itemPageImages'/>
